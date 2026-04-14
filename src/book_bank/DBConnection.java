@@ -2,12 +2,13 @@ package book_bank;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class DBConnection {
 
     Connection conn = null;
 
-    public static Connection connect(){
+    public static Connection connect() throws SQLException{
 
         try{
 
@@ -17,7 +18,6 @@ public class DBConnection {
             "jdbc:sqlite:/home/tharanetharan/Downloads/Book_Bank/Book_Bank.db");
 
             System.out.println("Database Connected");
-
             return conn;
 
         }catch(Exception e){
@@ -28,7 +28,7 @@ public class DBConnection {
         }
 
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
 
     Connection conn = DBConnection.connect();
 
