@@ -93,14 +93,4 @@ To run from NetBeans:
 
 ---
 
-## 🤝 Contributing
-
-Contributions, issues, and suggestions are welcome.  
-Feel free to fork the repo and open a pull request.
-
----
-
-## 📄 License
-
-No license file is currently defined in this repository.
 
